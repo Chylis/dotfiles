@@ -1,0 +1,15 @@
+---
+  #Link dot files
+  - name: Symlink my dotfiles
+    file: src={{ dotfilespath }}/dotfiles/{{ item }}
+          dest=~/{{ item }}
+          state=link
+          force=yes
+    with_items:
+        - .bash_aliases
+        - .bash_profile
+        - git-completion.bash
+        - .gitconfig
+        - .gitmessage
+        - .vim
+        - .vimrc

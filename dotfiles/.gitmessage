@@ -1,0 +1,20 @@
+*
+
+* This change is necessary because:
+
+* This change addresses the issue by:
+
+#Subject (50-characters):
+# e.g. "Redirect user to the requested page after login"
+#
+#Link: 
+#e.g. "https://trello.com/path/to/relevant/card"
+#
+#Why change necessary?: 
+#"Users were being redirected to the home page after login, which is less
+#useful than redirecting to the page they had originally requested before
+#being redirected to the login form."
+#
+#How does change address the issue?:
+#"* Store requested path in a session variable
+#* Redirect to the stored location after successfully logging in the user:"

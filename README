@@ -1,0 +1,25 @@
+Hello Mag!
+
+### Set up your (currently my MacOS - Linux coming soon!) environment easily using ansible ###
+
+1) Install homebrew
+  1.1) Update your brew recipes: 'brew update'
+  1.2) *OPTIONAL* Homebrew uses Github. Github has an API usage limit. Authenticated requests get a higher limit. 
+  If you have a Github API Token, add it to the path for homebrew to use: 'export HOMEBREW_GITHUB_API_TOKEN="your_token"'
+
+2) Install ansible 'brew install ansible'
+
+3) Run ./bootstrap which will run the ansible-playbook 'ansible/setup-dotfiles.yaml', providing the environment variable 'dotfilespath'
+
+4) The setup-dotfiles playbook will 
+  4.1) Fetch your homebrew dependencies
+  4.2) Symlink all you dotfiles to your home directory
+
+
+
+
+
+### Adding additional dotfiles ###
+
+1) Add the dotfile to the 'dotfiles' folder
+2) Add the name of the dotfile to the 'ansible/tasks/linkdotfiles.yaml' playbook

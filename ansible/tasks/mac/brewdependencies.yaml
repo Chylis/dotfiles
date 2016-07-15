@@ -1,0 +1,44 @@
+  - name: Mac brew - Make sure ant is available
+    homebrew: name=ant state=present
+
+  - name: Mac brew - Make sure bash-completion is available
+    homebrew: name=bash-completion state=present
+
+  - name: Mac brew - Make sure carthage is available
+    homebrew: name=carthage state=present
+
+  - name: Mac brew - Make sure cocoapods is available
+    homebrew: name=cocoapods state=present
+
+  - name: Mac brew - Make sure CURL is available
+    homebrew: name=curl state=present
+
+  - name: Mac brew - Make sure docker is available
+    homebrew: name=docker state=present
+
+  - name: Mac brew - Make sure GIT is available
+    homebrew: name=git state=present
+
+  - name: Mac brew - Make sure ideviceinstaller is available
+    homebrew: name=ideviceinstaller state=present
+
+  - name: Mac brew - Make sure irssi is available
+    homebrew: name=irssi state=present
+
+  - name: Mac brew - Make sure libimobiledevice is available
+    homebrew: name=libimobiledevice state=present
+
+  - name: Mac brew - Make sure libplist is available
+    homebrew: name=libplist state=present
+
+  - name: Mac brew - Make sure mongodb is available
+    homebrew: name=mongodb state=present
+
+  - name: Mac brew - Make sure mysql is available
+    homebrew: name=mysql state=present
+
+  - name: Mac brew - Make sure unrar is available
+    homebrew: name=unrar state=present
+
+  - name: Mac brew - Make sure WGET is available
+    homebrew: name=wget state=present
