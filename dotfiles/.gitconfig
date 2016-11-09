@@ -1,11 +1,19 @@
 [color]
-	diff = true
 	ui = auto
+[color "diff"]
+  meta = yellow bold ul  
+  frag = cyan bold ul
+  old = red bold  
+  new = green bold
+[color "status"]  
+  added = green bold  
+  changed = yellow bold  
+  untracked = red bold
 [user]
 	name = Magnus Eriksson
 	email = magnus.eriksson@apegroup.com
 [core]
-	excludesfile = /Users/magnus.eriksson/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [help]
 	autocorrect = 0
@@ -28,6 +36,7 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   prettylog = log --pretty=format:'%ad%x09%C(yellow)%s%Creset%x09(%an)' --no-merges --date=short
 	tags = for-each-ref --sort='*authordate' --format='%(tag)' refs/tags
+  search = log --no-merges -i -E --pretty='%h (%ad) - [%an] %s %d' --date=format:'%b %d %Y' --grep
 [credential]
 	helper = store
 [commit]
