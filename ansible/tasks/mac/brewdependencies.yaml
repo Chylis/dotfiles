@@ -42,3 +42,6 @@
 
   - name: Mac brew - Make sure WGET is available
     homebrew: name=wget state=present
+
+  - name: Mac brew - Make sure p4merge is available
+    homebrew: name=Caskroom/cask/p4merge state=present
