@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/magnus.eriksson/jobb/ios/redstonedevmain/fastlane'
+let g:netrw_dirhist_2='/Users/magnus.eriksson/.ssh'
+let g:netrw_dirhist_3='/Users/magnus.eriksson/jobb/ios/redstonedevmain/Documentation'
+let g:netrw_dirhist_4='/Users/magnus.eriksson/jobb/ios/redstonedevmain/externals/bazinga-dev'
+let g:netrw_dirhist_5='/Users/magnus.eriksson/jobb/ios/redstonedevmain/externals'
+let g:netrw_dirhist_6='/Users/magnus.eriksson/jobb/ios/redstonedevmain/externals/bazinga-dev'
+let g:netrw_dirhist_7='/Users/magnus.eriksson/jobb/ios/redstonedevmain/fastlane'

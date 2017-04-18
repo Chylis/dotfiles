@@ -3,7 +3,6 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
-alias ape='cd ~/apegroup'
 alias mag='cd ~/mag'
 
 alias whatsmyip='wget -qO- http://ipecho.net/plain ; echo'
@@ -32,9 +31,6 @@ alias path='echo -e ${PATH//:/\\n}'
 #date
 alias week='ncal -w'
 
-#SWIFT
-alias swift3.0='export PATH=/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-31-a.xctoolchain/usr/bin:${PATH}'
-
 #JAVA
 #alias start_mysql='cd /usr/local/mysql-5.6.12-osx10.7-x86 && ./bin/mysqld_safe&'
 alias java1.8='export JAVA_HOME=`/usr/libexec/java_home -v '1.8*'`'
@@ -52,14 +48,14 @@ _listXcodeWorkspaceSettings() {
   SCHEME=$2
   xcodebuild -workspace $WORKSPACE -scheme $SCHEME -showBuildSettings
 }
-alias listWorkspaceSettings='_listXcodeWorkspaceSettings'
+alias xcode_listWorkspaceSettings='_listXcodeWorkspaceSettings'
 
 _listXcodeProjectSettings() {
   PROJECT=$1
   TARGET=$2
   xcodebuild -project $PROJECT -target $TARGET -showBuildSettings
 }
-alias listProjectSettings='_listXcodeProjectSettings'
+alias xcode_listProjectSettings='_listXcodeProjectSettings'
 
 ##iOS simulator log
 
@@ -93,4 +89,4 @@ _printiOSAppearanceSelectors() {
   cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS*.sdk/System/Library/Frameworks/UIKit.framework/Headers
   grep -H UI_APPEARANCE_SELECTOR ./* | sed 's/ __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0) UI_APPEARANCE_SELECTOR;//'
 }
-alias iOSAppearanceSelectors='_printiOSAppearanceSelectors'
+alias xcode_iOSAppearanceSelectors='_printiOSAppearanceSelectors'

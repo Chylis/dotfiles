@@ -50,10 +50,7 @@ export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# The next line updates PATH for the Google Cloud SDK.
-#source '/Users/magnus.eriksson/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-#source '/Users/magnus.eriksson/google-cloud-sdk/completion.bash.inc'
+#Add fastlane to path
+export PATH="$HOME/.fastlane/bin:$PATH"
 
 ##screen irssi, /connect irc.freenode.net 8001, /join #dsv
