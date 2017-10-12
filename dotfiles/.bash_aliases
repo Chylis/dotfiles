@@ -3,7 +3,6 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
-alias ape='cd ~/apegroup'
 alias mag='cd ~/mag'
 
 alias whatsmyip='wget -qO- http://ipecho.net/plain ; echo'
@@ -46,6 +45,12 @@ alias java_versions="ls /Library/Java/JavaVirtualMachines"
 alias derivedData='cd ~/Library/Developer/Xcode/DerivedData'
 alias openXcode='open -a /Applications/Xcode.app/'
 alias cleanXcode='rm -rf /Users/magnus.eriksson/Library/Developer/Xcode/DerivedData/ && rm -rf Library/Caches/com.apple.dt.Xcode/ && rm -rf /Users/magnus.eriksson/Library/Saved\ Application\ State/com.apple.dt.Xcode.savedState/'
+
+_checkBitcodeImpl() {
+  FRAMEWORK=$1
+  (otool -l -arch arm64 $FRAMEWORK | grep LLVM) && (otool -l -arch armv7 $FRAMEWORK | grep LLVM)
+}
+alias checkBitcode='_checkBitcodeImpl'
 
 _listXcodeWorkspaceSettings() {
   WORKSPACE=$1
