@@ -43,6 +43,12 @@ alias derivedData='cd ~/Library/Developer/Xcode/DerivedData'
 alias openXcode='open -a /Applications/Xcode.app/'
 alias cleanXcode='rm -rf /Users/magnus.eriksson/Library/Developer/Xcode/DerivedData/ && rm -rf /Users/magnus.eriksson/Library/Caches/com.apple.dt.Xcode/ && rm -rf /Users/magnus.eriksson/Library/Saved\ Application\ State/com.apple.dt.Xcode.savedState/'
 
+_checkBitcodeImpl() {
+  FRAMEWORK=$1
+  (otool -l -arch arm64 $FRAMEWORK | grep LLVM) && (otool -l -arch armv7 $FRAMEWORK | grep LLVM)
+}
+alias checkBitcode='_checkBitcodeImpl'
+
 _listXcodeWorkspaceSettings() {
   WORKSPACE=$1
   SCHEME=$2

@@ -50,7 +50,7 @@ export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-#Add fastlane to path
+#Fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 ##screen irssi, /connect irc.freenode.net 8001, /join #dsv
