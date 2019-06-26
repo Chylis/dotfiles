@@ -3,19 +3,14 @@
   - name: Fetch brew packages
     homebrew: name={{ item }} state=present
     with_items:
-        - ant
+        - fzf
         - bash-completion
-        - carthage
-        - cocoapods
         - curl
         - docker
         - git
         - ideviceinstaller
         - libimobiledevice
         - libplist
-        - irssi
-        - mongodb
-        - mysql
         - unrar
         - wget
 
