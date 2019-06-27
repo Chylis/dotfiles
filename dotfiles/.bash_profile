@@ -1,5 +1,7 @@
 ## LOOK N' FEEL
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 #enables color in the terminal bash shell export
 export CLICOLOR=1
 
@@ -54,3 +56,8 @@ export LC_ALL=en_US.UTF-8
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 ##screen irssi, /connect irc.freenode.net 8001, /join #dsv
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
