@@ -7,3 +7,6 @@
 #Brew casks
 - name: Fetch brew casks 
   homebrew_cask: name='p4v' state=present
+
+- name: Install fzf
+  command: /usr/local/opt/fzf/install
