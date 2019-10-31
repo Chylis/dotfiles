@@ -2,6 +2,9 @@
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home/
+
 #enables color in the terminal bash shell export
 export CLICOLOR=1
 
