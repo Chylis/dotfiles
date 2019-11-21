@@ -11,7 +11,7 @@
   untracked = red bold
 [user]
 	name = Magnus Eriksson
-	email = magnus.g.eriksson@netinsight.net
+	email = chylis88@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input

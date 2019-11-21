@@ -35,8 +35,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-#Ant completion
-complete -C /opt/local/share/java/apache-ant/bin/complete-ant-cmd.pl ant build.sh
+# Source Swift completion
+if [ -n "`which swift`" ]; then
+    eval "`swift package completion-tool generate-bash-script`"
+fi
 
 ## PATHS AND SETTINGS
 #Increase terminal history size file
