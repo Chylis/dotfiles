@@ -41,7 +41,7 @@ alias java_versions="ls /Library/Java/JavaVirtualMachines"
 #XCODE
 alias derivedData='cd ~/Library/Developer/Xcode/DerivedData'
 alias openXcode='open -a /Applications/Xcode.app/'
-alias cleanXcode='rm -rf /Users/magnus.eriksson/Library/Developer/Xcode/DerivedData/ && rm -rf /Users/magnus.eriksson/Library/Caches/com.apple.dt.Xcode/ && rm -rf /Users/magnus.eriksson/Library/Saved\ Application\ State/com.apple.dt.Xcode.savedState/'
+alias cleanXcode='rm -rf $HOME/Library/Developer/Xcode/DerivedData/ && rm -rf $HOME/Library/Caches/com.apple.dt.Xcode/ && rm -rf $HOME/Library/Saved\ Application\ State/com.apple.dt.Xcode.savedState/'
 
 _checkBitcodeImpl() {
   FRAMEWORK=$1

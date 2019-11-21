@@ -1,22 +1,12 @@
 ---
 # Brew packages
-  - name: Fetch brew packages
-    homebrew: name={{ item }} state=present
-    with_items:
-        - fzf
-        - bash-completion
-        - curl
-        - docker
-        - git
-        - ideviceinstaller
-        - libimobiledevice
-        - libplist
-        - unrar
-        - wget
-
+- name: Fetch brew packages
+  homebrew: 
+    name: ['fzf', 'bash-completion', 'curl', 'git', 'libplist', 'unrar', 'wget'] 
+    state: present
 #Brew casks
-  - name: Fetch brew casks
-    homebrew_cask: name={{ item }} state=present
-    with_items:
-        - iterm2
-        - p4merge
+- name: Fetch brew casks 
+  homebrew_cask: name='p4v' state=present
+
+- name: Install fzf
+  command: /usr/local/opt/fzf/install
