@@ -2,7 +2,7 @@
 # Brew packages
 - name: Fetch brew packages
   homebrew: 
-    name: ['fzf', 'bash-completion', 'curl', 'git', 'libplist', 'unrar', 'wget', 'node', 'doxygen'] 
+    name: ['fzf', 'bash-completion', 'curl', 'git', 'libplist', 'unrar', 'wget', 'node', 'doxygen', 'cmake']
     state: present
 #Brew casks
 - name: Fetch brew casks 
