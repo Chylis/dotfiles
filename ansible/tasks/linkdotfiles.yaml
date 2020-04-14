@@ -8,6 +8,8 @@
     with_items:
         - .bash_aliases
         - .bash_profile
+        - .zshrc
+        - .zaliases
         - git-completion.bash
         - .gitconfig
         - .gitignore_global
