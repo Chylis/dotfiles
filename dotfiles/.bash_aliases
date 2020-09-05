@@ -20,7 +20,7 @@ alias ls='ls -G'
 alias ll='ls -latrh'
 alias rm='rm -i'
 
-alias systemlog='syslog -w'
+alias brewit='brew update && brew upgrade'
 
 # Create parent directories on demand
 alias mkdir='mkdir -pv'
