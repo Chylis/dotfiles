@@ -1,7 +1,7 @@
 autoload -Uz compinit && compinit
 
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(z kubectl)
+plugins=(z docker kubectl)
 source $ZSH/oh-my-zsh.sh
 
 # Load aliases
