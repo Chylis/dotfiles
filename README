@@ -3,6 +3,7 @@ Hello Mag!
 ### Set up your (currently my MacOS - Linux coming soon!) environment easily using ansible ###
 
 1). Run ./bootstrap which will run the ansible-playbook 'ansible/setup-dotfiles.yaml', providing the environment variable 'dotfilespath'
+It will also install homebrew and ansible.
 
 2) The setup-dotfiles playbook will 
   2.1) Fetch your homebrew dependencies

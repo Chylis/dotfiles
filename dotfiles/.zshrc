@@ -1,5 +1,9 @@
 autoload -Uz compinit && compinit
 
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(z kubectl)
+source $ZSH/oh-my-zsh.sh
+
 # Load aliases
 if [ -f ~/.zaliases ]; then
   source ~/.zaliases
@@ -7,16 +11,6 @@ fi
 
 # FUZZY FINDER
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-plugins=(z)
-
-# Load Git completion
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
-fpath=(~/.zsh $fpath)
-fpath=($fpath ~/.zsh/completion)
-
-source <(kubectl completion zsh)
-complete -F __start_kubectl k
 
 
 # Source Swift completion
